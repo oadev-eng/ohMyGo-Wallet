@@ -21,7 +21,7 @@ func SetupRouter(
 
 	// for frontend integration---
 	r.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"*"},
+		AllowOrigins:     []string{"http://localhost:3000"},
 		AllowMethods:     []string{http.MethodGet, http.MethodPost, http.MethodPut, http.MethodPatch, http.MethodDelete, http.MethodOptions},
 		AllowHeaders:     []string{"Origin", "Authorization", "Content-Type", "Content-Length"},
 		AllowCredentials: true,
