@@ -19,6 +19,7 @@ func SetupRouter(
 ) *gin.Engine {
 	r := gin.Default()
 
+	// for frontend integration---
 	r.Use(cors.New(cors.Config{
 		AllowOrigins:     []string{"*"},
 		AllowMethods:     []string{http.MethodGet, http.MethodPost, http.MethodPut, http.MethodPatch, http.MethodDelete, http.MethodOptions},
