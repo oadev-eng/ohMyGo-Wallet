@@ -21,7 +21,7 @@ func SetupRouter(
 
 	// for frontend integration---
 	r.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"http://localhost:3000"},
+		AllowOrigins:     []string{"http://localhost:3000", "https://heartfelt-choux-bb9a37.netlify.app"},
 		AllowMethods:     []string{http.MethodGet, http.MethodPost, http.MethodPut, http.MethodPatch, http.MethodDelete, http.MethodOptions},
 		AllowHeaders:     []string{"Origin", "Authorization", "Content-Type", "Content-Length"},
 		AllowCredentials: true,
